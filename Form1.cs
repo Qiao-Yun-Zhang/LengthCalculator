@@ -17,12 +17,18 @@ namespace LengthCalculator
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         // 全域變數
         string strInput; // 字串型態的strInput變數
         double douOutput; // double浮點數型態的douOutput變數
         private void txtCM_KeyUp(object sender, KeyEventArgs e)
         {
             /*double douCM; //宣告一個double變數，變數名稱叫douCM
+=======
+        private void txtCM_KeyUp(object sender, KeyEventArgs e)
+        {
+            double douCM; //宣告一個double變數，變數名稱叫douCM
+>>>>>>> 664796c20dd62370a362ecc3e0b81d0a85836d17
             douCM = Convert.ToDouble(txtCM.Text); //從txtCM輸入文字框取得輸入的文字，並且轉換成double的資料型態
 
             //透過string.Format格式化成小數點後共10位的數字，轉型成文字型態，在txtM顯示結果
@@ -30,6 +36,7 @@ namespace LengthCalculator
             txtKM.Text = string.Format("{0:0.##########}", douCM / 100000);
             txtIn.Text = string.Format("{0:0.##########}", douCM / 2.54);
             txtFt.Text = string.Format("{0:0.##########}", douCM / 30.48);
+<<<<<<< HEAD
             txtYard.Text = string.Format("{0:0.##########}", douCM / 91.44);*/
 
             strInput = txtCM.Text; // 將txtCM文字框的值放入strInput變數
@@ -49,6 +56,9 @@ namespace LengthCalculator
                 txtInfo.Text = "請輸入數字";
                 txtCM.Text = "";
             }
+=======
+            txtYard.Text = string.Format("{0:0.##########}", douCM / 91.44);
+>>>>>>> 664796c20dd62370a362ecc3e0b81d0a85836d17
         }
 
         private void txtM_KeyUp(object sender, KeyEventArgs e)
@@ -109,6 +119,7 @@ namespace LengthCalculator
             txtKM.Text = string.Format("{0:0.##########}", douYard * 0.0009144);
             txtIn.Text = string.Format("{0:0.##########}", douYard * 36);
             txtFt.Text = string.Format("{0:0.##########}", douYard * 3);
+<<<<<<< HEAD
         }
 
         private void btnAllClear_Click(object sender, EventArgs e)
@@ -120,6 +131,8 @@ namespace LengthCalculator
             txtIn.Text = "";
             txtFt.Text = "";
             txtYard.Text = "";
+=======
+>>>>>>> 664796c20dd62370a362ecc3e0b81d0a85836d17
         }
     }
 }
